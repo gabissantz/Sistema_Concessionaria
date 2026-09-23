@@ -40,15 +40,15 @@ int main() {
 		preco_moto = 0;
 		preco_veiculo = 0;
 
-		printf("\n ────୨ৎ CADASTRO DO CLIENTE %d DE %d ୨ৎ────\n", cont + 1, total_clientes);
+		printf("\n CADASTRO DO CLIENTE %d DE %d \n", cont + 1, total_clientes);
 
-		printf("\n⋆ ۶ৎ ˖ FAÇA SEU CADASTRO");
+		printf("\n FAÇA SEU CADASTRO");
 
 		printf("\nDigite seu nome completo:");
 		fgets(nome_completo, 100, stdin);
 
 		printf("Digite seu CPF: ");
-		fgets(cpf, 15, stdin);
+		fgets(cpf, 16, stdin);
 
 		printf("Digite sua data de nascimento (ex: 01/01/2000): ");
 		scanf(" %d / %d / %d", &dia, &mes, &ano);
@@ -74,7 +74,7 @@ int main() {
 			printf("Opcao invalida! Digite novamente: ");
 			scanf("%d", &salario);
 		}
-		printf("\n  ────୨ৎ ESCOLHA SEU VEICULO ୨ৎ────\n");
+		printf("\n  ESCOLHA SEU VEICULO \n");
 
 		printf("\nQue tipo de veiculo deseja comprar?\n");
 		printf("1 - CARRO\n");
@@ -84,7 +84,7 @@ int main() {
 
 		switch (tipo_veiculo) {
 		case 1:
-			printf("\n    ────୨ৎ CARROS DISPONIVEIS ୨ৎ────\n");
+			printf("\n    CARROS DISPONIVEIS \n");
 
 			printf("  1- Fiat Palio - 35.000,00 \n");
 			printf("  2- Mobi like -70.000,00 \n");
@@ -102,7 +102,7 @@ int main() {
 			break;
 
 		case 2:
-			printf("\n     ────୨ৎ MOTOS DISPONIVEIS ୨ৎ────\n");
+			printf("\n      MOTOS DISPONIVEIS \n");
 
 			printf("  1 - Yamaha R7 70th - 20.000,00 \n");
 			printf("  2 - Yamaha R15 ABS - 34.000,00 \n ");
@@ -160,7 +160,7 @@ int main() {
 		entrada_minima = preco_veiculo - valor_max_financiado;
 
 
-		printf("\n         ────୨ৎ ANALISE DE FINANCIAMENTO ୨ৎ────\n");
+		printf("\n         ANALISE DE FINANCIAMENTO \n");
 
 
 		if (valor_parcela <= renda_limite) {
@@ -174,7 +174,7 @@ int main() {
 			total_negados++;
 		}
 
-		printf("\n       ────୨ৎ DADOS CADASTRADOS ୨ৎ────           \n");
+		printf("\n          DADOS CADASTRADOS           \n");
 		printf("Nome Do Cliente:\n %s", nome_completo);
 		printf("Email: %s ", email);
 		printf("Data De Nascimento: %d/%d/%d \n", dia, mes, ano);
@@ -187,7 +187,7 @@ int main() {
 		while (getchar() != '\n');
 		system("clear");
 	}
-	printf("\n          ────୨ৎ RELATORIO FINAL ୨ৎ────           \n");
+	printf("\n           RELATORIO FINAL          \n");
 
 	printf("Total de clientes processados: %d\n", total_clientes);
 	printf("Total de financiamentos APROVADOS: %d\n", total_aprovados);
